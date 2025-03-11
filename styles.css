@@ -1,0 +1,99 @@
+/* PureChat - Styling for the landing page */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #007BFF; /* Pure Blue for accents */
+    --background-color: #0A192F; /* Deep Navy for dark theme */
+    --text-color: #F5F5F5; /* Soft White for contrast */
+    --secondary-color: #4B5563; /* Grey Steel for subtle UI elements */
+    --accent-color: #00FF99; /* Neon Green for highlights */
+    --font-primary: 'Inter', sans-serif;
+    --font-heading: 'Space Grotesk', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 2rem;
+    background: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.coming-soon {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+/* Feature Section */
+#features {
+    margin: 3rem 0;
+}
+
+.feature {
+    margin: 1.5rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* Download Section */
+#download {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--secondary-color);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--background-color);
+    background: var(--accent-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
