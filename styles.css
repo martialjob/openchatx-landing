@@ -1,17 +1,32 @@
-/* PureChat - Styling for the landing page */
+/* PurrrChat - Steampunk-Pixel Hybrid Styling with Privacy Focus */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Grotesk:wght@400;700&display=swap');
+/* Self-Hosted Pixel Fonts - Ensure you add these fonts to your project */
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323.woff2') format('woff2'),
+         url('fonts/VT323.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('fonts/PressStart2P.woff2') format('woff2'),
+         url('fonts/PressStart2P.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Root Variables */
 :root {
-    --primary-color: #007BFF; /* Pure Blue for accents */
-    --background-color: #0A192F; /* Deep Navy for dark theme */
-    --text-color: #F5F5F5; /* Soft White for contrast */
-    --secondary-color: #4B5563; /* Grey Steel for subtle UI elements */
-    --accent-color: #00FF99; /* Neon Green for highlights */
-    --font-primary: 'Inter', sans-serif;
-    --font-heading: 'Space Grotesk', sans-serif;
+    --primary-color: #C47F3A; /* Copper - Warm & Industrial */
+    --background-color: #1E1E1E; /* Dark Metal - Pixel Contrast */
+    --text-color: #E3D5C0; /* Aged Parchment - Classic Readability */
+    --secondary-color: #4A3B31; /* Rusted Bronze - Depth & Texture */
+    --accent-color: #FEC260; /* Brass Highlight - Pixel Glow */
+    --border-radius: 4px; /* Sharper edges for pixelated effect */
+    --font-primary: 'VT323', monospace; /* Retro-pixel aesthetic */
+    --font-heading: 'PressStart2P', cursive; /* Classic pixel art font */
 }
 
 /* Global Styles */
@@ -22,48 +37,61 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    image-rendering: pixelated;
 }
 
 header {
-    padding: 2rem;
+    padding: 1.5rem;
     background: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
 h1 {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px var(--secondary-color);
 }
 
 p {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .coming-soon {
     font-weight: bold;
     color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 /* Feature Section */
 #features {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .feature {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     max-width: 600px;
     padding: 1rem;
     background: var(--secondary-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color);
+    text-transform: uppercase;
 }
 
 /* Download Section */
 #download {
-    margin: 3rem 0;
-    padding: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
     background: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    color: var(--background-color);
+    text-transform: uppercase;
 }
 
 /* Footer */
@@ -71,29 +99,36 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border-top: 2px solid var(--primary-color);
 }
 
 footer a {
     color: var(--accent-color);
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    margin: 1rem;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
+    margin: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--background-color);
     background: var(--accent-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
     transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
 }
 
 .btn:hover {
     background: var(--primary-color);
     color: var(--text-color);
+    border: 2px solid var(--accent-color);
 }
-
