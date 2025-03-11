@@ -60,22 +60,29 @@ p {
     font-weight: 400;
 }
 
-@keyframes flicker {
-    0% { opacity: 1; text-shadow: 2px 2px var(--primary-color), -2px -2px var(--accent-color); }
-    25% { opacity: 0.8; text-shadow: 2px -2px var(--accent-color), -2px 2px var(--secondary-color); }
-    50% { opacity: 0.5; text-shadow: -3px 3px var(--primary-color), 3px -3px var(--accent-color); }
-    75% { opacity: 0.8; text-shadow: 1px -1px var(--secondary-color), -1px 1px var(--primary-color); }
-    100% { opacity: 1; text-shadow: 2px 2px var(--primary-color), -2px -2px var(--accent-color); }
+@keyframes intense-flicker {
+    0% { opacity: 1; text-shadow: 4px 4px var(--primary-color), -4px -4px var(--accent-color); }
+    10% { opacity: 0.2; text-shadow: -5px 5px var(--accent-color), 5px -5px var(--secondary-color); }
+    20% { opacity: 0.8; text-shadow: 6px -6px var(--secondary-color), -6px 6px var(--primary-color); }
+    30% { opacity: 0.3; text-shadow: -3px -3px var(--primary-color), 3px 3px var(--accent-color); }
+    40% { opacity: 1; text-shadow: 4px 0px var(--accent-color), -4px 0px var(--secondary-color); }
+    50% { opacity: 0.1; text-shadow: -2px 2px var(--primary-color), 2px -2px var(--accent-color); }
+    60% { opacity: 0.9; text-shadow: 7px -7px var(--secondary-color), -7px 7px var(--primary-color); }
+    70% { opacity: 0.2; text-shadow: 0px 4px var(--accent-color), 0px -4px var(--secondary-color); }
+    80% { opacity: 1; text-shadow: -5px -5px var(--primary-color), 5px 5px var(--accent-color); }
+    90% { opacity: 0.4; text-shadow: 3px 3px var(--accent-color), -3px -3px var(--secondary-color); }
+    100% { opacity: 1; text-shadow: 6px 6px var(--primary-color), -6px -6px var(--accent-color); }
 }
 
 .coming-soon {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--accent-color);
     text-transform: uppercase;
     display: inline-block;
-    animation: flicker 0.8s infinite alternate ease-in-out;
+    animation: intense-flicker 0.5s infinite alternate-reverse ease-in-out;
 }
+
 
 /* Feature Section */
 #features {
